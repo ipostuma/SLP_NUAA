@@ -477,3 +477,10 @@ convert input.jpg -define convolve:scale='!' -convolve `cat custom_kernel.txt` o
 This command will apply your custom convolutional filter to the input image and save the result as output.jpg.
 
 You can create various custom kernels with different patterns of 1s and 0s to achieve different image processing effects, such as blurring, sharpening, or edge detection. The flexibility of ImageMagick allows you to experiment and create custom filters to suit your specific image processing needs.
+
+## Introduction to Git Repository
+
+Git is a distributed version control system that allows multiple people to work on a project simultaneously without overwriting each other's changes. It keeps track of changes to files and directories, allowing you to revert to previous versions if needed.
+
+#### What is GitHub?
+GitHub is a web-based platform that uses Git. It provides a graphical interface and additional features like issue tracking, project management, and collaboration tools.

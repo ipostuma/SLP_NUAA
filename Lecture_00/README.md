@@ -103,7 +103,7 @@ Bash is an incredibly powerful tool for command-line processing and automation. 
 The Neutron Monitor Database (NMDB) is a comprehensive repository that collects and provides access to real-time and historical data on cosmic ray neutron measurements from a global network of neutron monitors. These monitors, situated at various locations worldwide, detect secondary cosmic rays, primarily neutrons, which are produced when primary cosmic rays interact with the Earth's atmosphere. The data from NMDB is crucial for research in space weather, solar-terrestrial physics, and atmospheric science, offering insights into cosmic ray variations, solar activity, and their effects on the Earth's environment. The database is widely used by researchers and institutions for studying cosmic ray intensity changes and their implications.
 
 Try to:
-1. Use wget method to fetch the last 5 days of data. (TIP)[https://www.nmdb.eu/nest/help.php#howto]
+1. Use wget method to fetch the last 5 days of data. [TIP](https://www.nmdb.eu/nest/help.php#howto)
 2. Use gnuplot to plot the downloaded CSV file
 
 <details>
