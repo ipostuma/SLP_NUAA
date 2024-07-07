@@ -480,7 +480,7 @@ You can create various custom kernels with different patterns of 1s and 0s to ac
 
 ## Introduction to Git Repository
 
-Git is a distributed version control system that allows multiple people to work on a project simultaneously without overwriting each other's changes. It keeps track of changes to files and directories, allowing you to revert to previous versions if needed.
+Git is a distributed version control system that allows multiple people to work on a project simultaneously without overwriting each other's changes. It keeps track of changes to files and directories, allowing you to revert to previous versions if needed. Go [here](Intro_Git.md) to better understand how to use a git repository in combination with github.
 
 #### What is GitHub?
 GitHub is a web-based platform that uses Git. It provides a graphical interface and additional features like issue tracking, project management, and collaboration tools.
