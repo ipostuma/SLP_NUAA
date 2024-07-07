@@ -120,6 +120,73 @@ Example usage: `./options_demo.sh -a value1 -b value2`.
 
 Using command-line arguments in your Bash scripts allows you to make your scripts more flexible and versatile by providing different input parameters without modifying the script's code.
 
+### Special parenthesis
+
+#### `(( ))` in Bash
+The `(( ))` syntax in Bash is used for arithmetic evaluation on integers. It allows you to perform arithmetic operations and logical comparisons within a script. Inside `(( ))`, variables can be used without the `$` prefix.
+
+##### Key Features:
+1. **Arithmetic Operations**: You can perform addition, subtraction, multiplication, division, and modulus operations.
+2. **Increment and Decrement**: You can use `++` and `--` operators.
+3. **Logical Comparisons**: You can perform comparisons like `<`, `<=`, `>`, `>=`, `==`, and `!=`.
+4. **Exit Status**: The `(( ))` construct returns an exit status of 0 (true) if the expression evaluates to a non-zero value, and 1 (false) otherwise.
+
+##### Example:
+```bash
+#!/bin/bash
+
+a=5
+b=3
+
+# Arithmetic operations
+(( sum = a + b ))
+echo "Sum: $sum"  # Output: Sum: 8
+
+# Increment and decrement
+(( a++ ))
+echo "Incremented a: $a"  # Output: Incremented a: 6
+
+(( b-- ))
+echo "Decremented b: $b"  # Output: Decremented b: 2
+
+# Logical comparison
+if (( a > b )); then
+    echo "a is greater than b"
+else
+    echo "a is not greater than b"
+fi
+# Output: a is greater than b
+```
+
+#### `$()` in Bash
+The `$()` syntax in Bash is used for command substitution. It allows you to capture the output of a command and use it as part of another command or assign it to a variable. The output is executed in a subshell and returned as a string.
+
+##### Key Features:
+1. **Command Execution**: Executes the command inside the parentheses and captures its output.
+2. **Nesting**: You can nest command substitutions.
+3. **Cleaner Syntax**: Preferred over the older backticks (``) for readability and ease of nesting.
+
+##### Example:
+```bash
+#!/bin/bash
+
+# Command substitution
+current_date=$(date)
+echo "Current date and time: $current_date"  # Output: Current date and time: (current date and time)
+
+# Using command substitution in another command
+files_list=$(ls)
+echo "Files in the current directory: $files_list"
+
+# Nested command substitution
+nested_output=$(echo "Today's date is $(date +%F)")
+echo "$nested_output"  # Output: Today's date is (current date in YYYY-MM-DD format)
+```
+
+#### Summary:
+- **`(( ))`**: Used for arithmetic evaluation and logical comparisons. It evaluates the expression and can be used for both calculations and conditional statements.
+- **`$()`**: Used for command substitution. It captures the output of a command and can be used within another command or assigned to a variable.
+
 ### Exercises
 
 Start by opening a text editor of your choice, such as nano, vim, or gedit. Use the following script:
