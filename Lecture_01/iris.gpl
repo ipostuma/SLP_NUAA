@@ -1,0 +1,6 @@
+set title "Iris Dataset"
+set xlabel "Sepal Length"
+set ylabel "Sepal Width"
+set datafile separator ','
+
+plot setosa using 1:2, versicolor using 1:2, virginica using 1:2
