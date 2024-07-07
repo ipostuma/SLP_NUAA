@@ -238,3 +238,5 @@ git push origin v1.0
 
 Markdown is a lightweight markup language with plain-text formatting syntax. Go [here](Intro_MarkDown.md) for an introduction to MarkDown.
 
+To gain deeper working knowledge about git and github, please refer to [this](https://docs.github.com/en/get-started/using-git/about-git) extended description.
+
