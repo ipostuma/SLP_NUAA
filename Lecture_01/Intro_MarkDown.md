@@ -53,7 +53,7 @@ Here is some `inline code`.
 ```
 
 **Code Block**:
-```markdown
+````markdown
 ```
 {
   "firstName": "John",
@@ -61,13 +61,13 @@ Here is some `inline code`.
   "age": 25
 }
 ```
-```
+````
 
 ### Example Markdown File
 
 Create `docs/README.md` and add the following content:
 
-```markdown
+````markdown
 # Project Title
 
 ## Introduction
@@ -76,17 +76,19 @@ This project is an example for learning Git and GitHub.
 
 ## Directory Structure
 
-- \`docs/\`: Documentation files.
+- `docs/`: Documentation files.
 
 ## Usage
 
 To clone this repository, run:
 
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/my-project.git
-\`\`\`
+```
 
 ## License
 
 This project is licensed under the MIT License.
-```
+````
+
+[Here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) you may find more examples.
