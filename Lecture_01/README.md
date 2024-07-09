@@ -356,6 +356,15 @@ wget https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 * use gnuplot to plot sepal length and width (first two columns) of the three iris types: Setosa, Versicolor, and Virginica. Each type has to have its own maker
 * compute mean and standard deviation for each of the four features.
 
+> [!WARNING]
+> On some Ubuntu versions you may need to install a new version of gnuplot, and start the gnuplot file with:
+> 
+> ```set terminal qt```
+>
+> The correct version of gnuplot is:
+> 
+> ```sudo apt install gnuplot-qt```
+
 <details>
   <summary>TIP</summary>
 
@@ -386,12 +395,6 @@ There is a gnuplot script example `iris.gpl` which can be used by:
 ```
 gnuplot -p -e "setosa='setosa.csv'" -e "versicolor='versicolor.csv'" -e "virginica='virginica.csv'" iris.gpl 
 ```
-
-> [!WARNING]
-> On some Ubuntu versions you may need to install a new version of gnuplot, and start the gnuplot file with
-> ```set terminal qt```
-> The correct version of gnuplot is:
-> ```sudo apt install gnuplot-qt```
 
 </details>
 
