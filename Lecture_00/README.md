@@ -106,6 +106,15 @@ Try to:
 1. Use wget method to fetch the last 5 days of data. [TIP](https://www.nmdb.eu/nest/help.php#howto)
 2. Use gnuplot to plot the downloaded CSV file
 
+> [!WARNING]
+> On some Ubuntu versions you may need to install a new version of gnuplot, and start the gnuplot file with:
+> 
+> ```set terminal qt```
+>
+> The correct version of gnuplot is:
+> 
+> ```sudo apt install gnuplot-qt```
+
 <details>
   <summary>Answer 1.</summary>
 
@@ -140,15 +149,6 @@ execute gnuplot:
 ```
 gnuplot -p gnuplot.txt 
 ```
-
-> [!WARNING]
-> On some Ubuntu versions you may need to install a new version of gnuplot, and start the gnuplot file with:
-> 
-> ```set terminal qt```
->
-> The correct version of gnuplot is:
-> 
-> ```sudo apt install gnuplot-qt```
 
 </details>
 
