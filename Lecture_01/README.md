@@ -387,9 +387,8 @@ There is a gnuplot script example `iris.gpl` which can be used by:
 gnuplot -p -e "setosa='setosa.csv'" -e "versicolor='versicolor.csv'" -e "virginica='virginica.csv'" iris.gpl 
 ```
 
-[!WARNING]
-On some Ubuntu versions you may need to install a new version of gnuplot, and start the gnuplot file with `set termina qt`. The correct version of gnuplot is: `sudo apt install gnuplot-qt`
-[!WARNING]
+> [!WARNING]
+> On some Ubuntu versions you may need to install a new version of gnuplot, and start the gnuplot file with `set termina qt`. The correct version of gnuplot is: `sudo apt install gnuplot-qt`
 
 </details>
 
