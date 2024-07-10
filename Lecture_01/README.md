@@ -356,6 +356,15 @@ wget https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 * use gnuplot to plot sepal length and width (first two columns) of the three iris types: Setosa, Versicolor, and Virginica. Each type has to have its own maker
 * compute mean and standard deviation for each of the four features.
 
+> [!WARNING]
+> On some Ubuntu versions you may need to install a new version of gnuplot, and start the gnuplot file with:
+> 
+> ```set terminal qt```
+>
+> The correct version of gnuplot is:
+> 
+> ```sudo apt install gnuplot-qt```
+
 <details>
   <summary>TIP</summary>
 
@@ -480,7 +489,7 @@ You can create various custom kernels with different patterns of 1s and 0s to ac
 
 ## Introduction to Git Repository
 
-Git is a distributed version control system that allows multiple people to work on a project simultaneously without overwriting each other's changes. It keeps track of changes to files and directories, allowing you to revert to previous versions if needed.
+Git is a distributed version control system that allows multiple people to work on a project simultaneously without overwriting each other's changes. It keeps track of changes to files and directories, allowing you to revert to previous versions if needed. Go [here](Intro_Git.md) to better understand how to use a git repository in combination with github.
 
 #### What is GitHub?
 GitHub is a web-based platform that uses Git. It provides a graphical interface and additional features like issue tracking, project management, and collaboration tools.

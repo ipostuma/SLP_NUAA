@@ -23,7 +23,7 @@ Objective: Use grep to find employees with salaries greater than $55,000.
   <summary>Answer</summary>
 
 ```
-grep '\$[5-9][0-9]\{4\}' employees.txt
+grep -e '\$[5-9][6-9][0-9]\{3\}\|\$[6-9][0-9]\{4\}' file.csv
 ```
 
 Explanation:
@@ -49,7 +49,7 @@ Objective: Use awk to extract the employee names and salaries and calculate thei
   <summary>Answer</summary>
 
 ```
-awk -F', ' '{printf "Name: %s, Salary: $%d, Bonus: $%d\n", $1, $2, $2*0.1}' employees.txt
+cat file.csv | sed 's/\$//g' | awk -F ',' '{printf "Name: %s, Salary: $%d, Bonus: $%d\n", $1, $2, $2*0.1}'
 ```
 
 Explanation:
@@ -105,6 +105,15 @@ The Neutron Monitor Database (NMDB) is a comprehensive repository that collects 
 Try to:
 1. Use wget method to fetch the last 5 days of data. [TIP](https://www.nmdb.eu/nest/help.php#howto)
 2. Use gnuplot to plot the downloaded CSV file
+
+> [!WARNING]
+> On some Ubuntu versions you may need to install a new version of gnuplot, and start the gnuplot file with:
+> 
+> ```set terminal qt```
+>
+> The correct version of gnuplot is:
+> 
+> ```sudo apt install gnuplot-qt```
 
 <details>
   <summary>Answer 1.</summary>
